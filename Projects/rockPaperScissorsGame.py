@@ -4,10 +4,11 @@ l = ["Rock", "Scissor", "Paper"]
 
 '''
 Conditions:
-      U       C
-    Rock vs Paper -> Paper Wins
-    Rock vs Scissor -> Rock Wins
-    Paper vs Scissor -> Scissor Wins
+     User  Computer
+      |       |
+    Rock vs Paper -> Paper Wins           if (user == "Rock" and computer == "Paper") ==> Computer Winner  : Computer Fold the Rock by using Paper
+    Rock vs Scissor -> Rock Wins          if (user == "Rock" and computer == "Scissor") ==> User Winner    : Rock brack the Scissor 
+    Paper vs Scissor -> Scissor Wins      if (user == "Paper" and computer == "Scissor") ==> Computer Winner : Because Scissor cuts the Paper
 '''
 
 while True:
@@ -20,7 +21,7 @@ while True:
     '''))
     if uchoice == 1:
         # pass
-        for i in range(1, 6):
+        for i in range(1, 6):             # There are Five Rounds in this game
             # Taking the User Input
             userInput = int(input('''
             1: Rock
