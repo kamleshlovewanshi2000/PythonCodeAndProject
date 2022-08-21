@@ -14,7 +14,7 @@ while True:
     ccount = 0
     ucount = 0
     uchoice = int(input('''
-    Game Start ...
+    Game Start ... 
     1: Yes
     2: Exit Game
     '''))
