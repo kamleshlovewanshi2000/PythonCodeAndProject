@@ -17,7 +17,7 @@ class BickShop:
         elif q>self.stock:
             print("Enter the Value (Less then Stock):")
         else:
-            self.stock = self.stock-q
+            self.stock -= q
             print("Total Prices for Bike Rent:", q*100)
             print("Total Bikes Available in stock:",self.stock)
 
